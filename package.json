@@ -3,11 +3,12 @@
   "displayName": "Clipboard Content Copier",
   "publisher": "Cryzto",
   "description": "This extension allows you to copy the names and contents of files and folders to the clipboard.",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Zhatra/clipboard-content-copier"
   },
+  "icon": "logo.png",  
   "engines": {
     "vscode": "^1.92.0"
   },
