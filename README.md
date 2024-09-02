@@ -19,11 +19,13 @@ The **Clipboard Content Copier** extension allows you to easily copy the names a
 
 ![alt text](image-5.png)
 ![alt text](image-6.png)
+
 ### Copy Directory Structure and Content
 
 1. Right-click on any directory in the Explorer view.
 2. Select **Copy Directory Structure and Content to Clipboard**.
 3. The directory structure and the contents of each file within the directory will be copied to your clipboard.
+
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 
