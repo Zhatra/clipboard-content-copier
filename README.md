@@ -1,71 +1,48 @@
-# copy-file-folder-name-and-content README
+# Clipboard Content Copier - VS Code Extension
 
-This is the README for your extension "copy-file-folder-name-and-content". After writing up a brief description, we recommend including the following sections.
+## Overview
+
+The **Clipboard Content Copier** extension allows you to easily copy the names and contents of files and directories to your clipboard directly from Visual Studio Code. With simple commands, you can copy the entire content of a file or the structure and content of a directory, making it easier to share or document your work.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Copy File Content to Clipboard**: Copy the name and full content of a selected file to your clipboard.
+- **Copy Directory Structure and Content to Clipboard**: Copy the directory structure along with the contents of all files within a selected directory.
 
-For example if there is an image subfolder under your extension project workspace:
+## Usage
 
-\!\[feature X\]\(images/feature-x.png\)
+### Copy File Content
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Right-click on any file in the Explorer view.
+2. Select **Copy File Content to Clipboard**.
+3. The file name and its content will be copied to your clipboard.
 
-## Requirements
+### Copy Directory Structure and Content
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Right-click on any directory in the Explorer view.
+2. Select **Copy Directory Structure and Content to Clipboard**.
+3. The directory structure and the contents of each file within the directory will be copied to your clipboard.
 
-## Extension Settings
+## Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
+3. Search for `Clipboard Content Copier`.
+4. Click **Install**.
 
-For example:
+## Commands
 
-This extension contributes the following settings:
+- `clipboard-content-copier.copyFileContent`: Copies the name and content of the selected file to the clipboard.
+- `clipboard-content-copier.copyDirectoryContent`: Copies the directory structure and content of the selected folder to the clipboard.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Contributing
 
-## Known Issues
+If you find any issues or have suggestions for new features, please feel free to [open an issue](https://github.com/Zhatra/clipboard-content-copier/issues) or submit a pull request.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## License
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy using Clipboard Content Copier?** Please consider leaving a review on the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).

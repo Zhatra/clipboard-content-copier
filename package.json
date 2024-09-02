@@ -1,7 +1,7 @@
 {
-  "name": "copy-file-folder-name-and-content",
-  "displayName": "Copy File/Folder name and content",
-  "description": "This extension allows you to copy the names and contents of files and folders to the clipboard, with options to accumulate clipboard content or clear it.",
+  "name": "clipboard-content-copier",
+  "displayName": "Clipboard Content Copier",
+  "description": "This extension allows you to copy the names and contents of files and folders to the clipboard.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.92.0"
@@ -10,35 +10,35 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:copy-file-folder-name-and-content.helloWorld",
-    "onCommand:copy-file-folder-name-and-content.copyFileContent",
-    "onCommand:copy-file-folder-name-and-content.copyDirectoryContent"
+    "onCommand:clipboard-content-copier.helloWorld",
+    "onCommand:clipboard-content-copier.copyFileContent",
+    "onCommand:clipboard-content-copier.copyDirectoryContent"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "copy-file-folder-name-and-content.helloWorld",
+        "command": "clipboard-content-copier.helloWorld",
         "title": "Hello World"
       },
       {
-        "command": "copy-file-folder-name-and-content.copyFileContent",
+        "command": "clipboard-content-copier.copyFileContent",
         "title": "Copy File Content to Clipboard"
       },
       {
-        "command": "copy-file-folder-name-and-content.copyDirectoryContent",
+        "command": "clipboard-content-copier.copyDirectoryContent",
         "title": "Copy Directory Structure and Content to Clipboard"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "copy-file-folder-name-and-content.copyFileContent",
+          "command": "clipboard-content-copier.copyFileContent",
           "group": "navigation",
           "when": "resourceLangId != ''"  
         },
         {
-          "command": "copy-file-folder-name-and-content.copyDirectoryContent",
+          "command": "clipboard-content-copier.copyDirectoryContent",
           "group": "navigation",
           "when": "explorerResourceIsFolder"  
         }

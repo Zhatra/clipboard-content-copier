@@ -4,10 +4,10 @@ import * as path from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
 
-	console.log('Congratulations, your extension "copy-file-folder-name-and-content" is now active!');
+	console.log('Congratulations, your extension "Clipboard Content Copier" is now active!');
 
 	// Command to copy file name and content to clipboard
-	const copyFileContent = vscode.commands.registerCommand('copy-file-folder-name-and-content.copyFileContent', async (uri: vscode.Uri) => {
+	const copyFileContent = vscode.commands.registerCommand('clipboard-content-copier.copyFileContent', async (uri: vscode.Uri) => {
 		try {
 			if (!uri || !uri.fsPath) {
 				vscode.window.showErrorMessage('No file selected or file path is invalid.');
@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	// Command to copy directory structure and content to clipboard
-	const copyDirectoryContent = vscode.commands.registerCommand('copy-file-folder-name-and-content.copyDirectoryContent', async (uri: vscode.Uri) => {
+	const copyDirectoryContent = vscode.commands.registerCommand('clipboard-content-copier.copyDirectoryContent', async (uri: vscode.Uri) => {
 		try {
 			if (!uri || !uri.fsPath || !fs.lstatSync(uri.fsPath).isDirectory()) {
 				vscode.window.showErrorMessage('No directory selected or invalid path.');
@@ -85,8 +85,8 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(copyDirectoryContent);
 
 	// Example existing command
-	const disposable = vscode.commands.registerCommand('copy-file-folder-name-and-content.helloWorld', () => {
-		vscode.window.showInformationMessage('Esta es una extension de Zhatra!');
+	const disposable = vscode.commands.registerCommand('clipboard-content-copier.helloWorld', () => {
+		vscode.window.showInformationMessage('This is Clipboard Content Copier extension!');
 	});
 
 	context.subscriptions.push(disposable);
