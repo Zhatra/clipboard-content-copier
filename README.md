@@ -51,4 +51,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Enjoy using Clipboard Content Copier?** Please consider leaving a review on the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+**Enjoy using Clipboard Content Copier?** Please consider leaving a review on the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Cryzto.clipboard-content-copier).
